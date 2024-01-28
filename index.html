@@ -5,30 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
   </head>
 
   <body>
-    <!-- nav -->
-    <nav class="nav py-4 my-3 text-center">
+
+    <!-- old nav -->
+    <!-- <nav class="nav py-4 my-3 text-center">
       <div class="container container-sm">
         <a href="#" class="px-4 py-2 rounded-pill bg-secondary text-light">Home</a>
         <a href="#" class="px-4 py-2 rounded-pill bg-secondary text-light">About</a>
         <a href="#" class="px-4 py-2 rounded-pill bg-secondary text-light">Projects</a>
         <a href="#" class="px-4 py-2 rounded-pill bg-secondary text-light">Contact</a>
       </div>
+    </nav> -->
+
+
+    <!-- new nav -->
+    <nav class="navbar navbar-expand-lg my-3">
+      <div class="container px-3">
+        <a class="navbar-brand" href="#">S</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
+    
 
     <!-- bento grid -->
     <section>
       <div class="container">
+
         <!-- box 1 & 2 -->
         <div class="d-md-flex justify-content-between align-items-center px-2">
           <div class="col-md-9">
-            <h1 class="text-center">Hi, I'm Sanna</h1>
+            <h1 class="text-center">Hey, I'm Sanna</h1>
             <h1 class="h2 text-center">On a journey to move into tech</h1>
           </div>
           <div class="col-md-3">
-            <img class="img-fluid rounded" src="/img/bento img.png" alt="">
+            <img class="img-fluid rounded" src="/img/bento.png" alt="">
           </div>
         </div>
 
@@ -38,9 +66,9 @@
             <div class="card mx-2">
               <img src="/img/project.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, aliquam.</p>
+                <a href="#" class="btn btn-primary">View Project</a>
               </div>
             </div>
           </div>
@@ -48,15 +76,30 @@
             <div class="card mx-2">
               <img src="/img/project.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">Project 2</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nobis?</p>
+                <a href="#" class="btn btn-primary">View Project</a>
               </div>
             </div>
           </div>
         </div>
 
         <!-- box 5 & 6 -->
+        <div class="d-md-flex justify-content-between align-items-center px-2 mb-3">
+          <div class="col-md-10 px-2">
+            <h3 class="h1">Currently Learning:</h3>
+            <p class="lead">Bootstrap and Git</p>
+          </div>
+          <div class="col-md-2">
+            <img class="img-fluid w-100 rounded float-end" src="/img/square.png" alt="">
+            <div class="container text-center">
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+
+
       </div>
     </section>
 
